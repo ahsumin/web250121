@@ -1,29 +1,3 @@
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
-
-/* *{
-    background-color: red;
-} */
-
-/* p{
-    color: red;
-    background-color: blue;
-} */
-
-h1{
-    color: yellow;
-}
-
-.babo{
-    color: red;
-    font-size: 24px;
-    font-weight: 700;
+*{
     text-align: center;
-    word-break: none;
-    font-family: "Pretendard Variable";
-}
-
-img{
-    width: 100vw;
-    border: 5px solid #000;
-    border-radius: 10%;
 }
