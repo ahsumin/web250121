@@ -6,12 +6,177 @@
     <title>suminha</title>
     <link rel ="stylesheet" href="./style.css">
 </head>
-<body>
- <p class="Title">
-    Uncarina Stellulifera
-    <br>
- </p>   
+<style>
+    .flex-container {
+      display: flex; 
+      justify-content: space-between; 
+      width: 100% ; 
+    }
+  </style>
+  <style>
 
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .tooltip.left .tooltiptext{
+      visibility: hidden; 
+      width: 200px;
+      background-color: #f9f9f9;
+      text-align: left;
+      padding: 10px;
+      position: absolute;
+      bottom: -240px; 
+      left: 20%;
+      border: 1px solid black; 
+      border-radius: 5px; 
+      opacity: 0; 
+      transition: opacity 0.3s ease, visibility 0s 0.3s; 
+      background: linear-gradient(#F5A9D0,#F8E0EC,#FFFFFF);
+    }
+    .tooltip.right .tooltiptext{
+      visibility: hidden; 
+      width: 200px;
+      background-color: #f9f9f9;
+      text-align: right;
+      padding: 10px;
+      position: absolute;
+      bottom: -480px; 
+      right: 20%;
+      border: 1px solid black; 
+      border-radius: 5px; 
+      opacity: 0; 
+      transition: opacity 0.3s ease, visibility 0s 0.3s; 
+      background: linear-gradient(#81DAF5,#CEECF5,#FFFFFF);
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible; 
+      opacity: 1;  
+      transition: opacity 0.3s ease; 
+      background-color: #f9f9f9;
+    }
+    .fixed-right {
+    position: fixed;  
+    bottom: 0;        
+    right: 0;          
+    width: 200px;     
+    height: 200px;    
+    background-image: url('corner.png'); 
+    background-size: cover; 
+    background-position: center; 
+    transition: transform 0.3s ease;
     
+  }
+  .fixed-right:hover {
+    transform: scale(1.1);
+  }
+  
+    .rotating-image {
+      position: fixed;
+      bottom: 3%;
+      left:3%;
+      width: 100px;  
+      height: 100px; 
+      background-image: url('left corner.png'); 
+      background-size: cover;
+      background-position: center;
+      animation: rotate 4s linear infinite;
+    
+    }
+    @keyframes
+    rotate{
+    0% {
+      transform: rotate(0deg); 
+    }
+    100% {
+      transform: rotate(360deg);  
+    }   
+}
+.container {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+      z-index: -1;
+}
+.two {
+        align-items: center;
+        text-align: center;
+    }
+
+  </style>
+
+<body>
+
+  <div class="flex-container">
+    <p class="left"><span class="tooltip left">suminha 
+        <span class="tooltiptext"> Hello, this is Sumin
+            <br>
+            <br>
+            The weather's been getting pretty cold lately, so make sure to stay warm! And... I'm SUPER happy to be here with all of you. 
+            <br>
+            <br>
+            Have a nice day everyone~
+            <br>
+            <br>
+            ✨✨🤍🍧☀️✨✨🤍🍧☀️✨✨
+        </span>
+        </span></p>
+    <p class="right"><span class="tooltip right">feb.4.tue
+        <span class="tooltiptext"> 
+            <img src="1.png" width="150" height="150">
+            <br>
+            <br>
+        <strong>SCHEDULE</strong>
+        <br>
+        <br>
+        <a href="https://docs.google.com/spreadsheets/d/1M_oSn0CZk8l7wiuRIUAOWAjAc3g5dW8SYe2BU9Vd47Y/edit?gid=0#gid=0" target="_blank">Web Seminar 💻</a><br>
+        <br>
+        <strong>NOTICE</strong>
+        <br>
+        <br>
+        <a href="https://g.co/kgs/PXsQ8u5" target="_blank">
+            Calendar 🗓</a>
+            <br>
+        <a href="https://weather.naver.com/" target="_blank">
+             Weather ☁️ </a>
+             <br>
+             <br>
+             <strong>INFORMATION</strong>
+             <br>
+             <br>
+             <a href="mailto:09su16min@gmail.com" target="_blank">
+                 Mail 📩 </a>
+                 <br>
+                 <a href="sms:01097951609" target="_blank">
+                    Call 📞</a>   
+        <br>
+        <br>
+
+        
+        </span>
+        </span>
+    </p>
+  </div>
+  <a href="https://www.instagram.com/sx.xxn_/" target="_blank"> 
+  <div class="fixed-right"></div></a>
+  <a href="https://www.youtube.com/watch?v=2uIKfZZB8FA" target="_blank"> 
+  <div class="rotating-image" ></div></a>
+
+  <div class="container">
+    <img src="center.png" alt="good time" width="800" height="800">
+  </div>
+
 </body>
+
+<body class="two">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <input type="text" placeholder="Your Feelings" size="20">
+    <button type="submit">🌀</button>
+  </body>
+
 </html>
